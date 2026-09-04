@@ -1,0 +1,39 @@
+[
+  {
+    "id": "evidence-base",
+    "type": "capability",
+    "key": "Evidence-backed fact base",
+    "value": "Locks the exact ASIN and variant, records sources, and separates confirmed facts from conflicts or unsupported claims."
+  },
+  {
+    "id": "buyer-questions",
+    "type": "capability",
+    "key": "Natural-language buyer questions",
+    "value": "Generates high-intent questions covering fit, value, compatibility, materials, use, durability, objections, and comparison."
+  },
+  {
+    "id": "surface-scoring",
+    "type": "capability",
+    "key": "Listing-surface scoring",
+    "value": "Scores how clearly the title, bullets, A+, images, Q&A, reviews, and attributes answer each question."
+  },
+  {
+    "id": "commercial-gaps",
+    "type": "capability",
+    "key": "Commercial gap prioritization",
+    "value": "Ranks unanswered or contradictory questions by purchase confidence, return risk, differentiation, and discoverability."
+  },
+  {
+    "id": "exact-rewrites",
+    "type": "capability",
+    "key": "Exact content rewrites",
+    "value": "Drafts source-backed fixes for titles, bullets, A+ content, Q&A, image callouts, and catalog attributes."
+  },
+  {
+    "id": "claim-guardrails",
+    "type": "capability",
+    "key": "Claim and contradiction guardrails",
+    "value": "Flags unsupported claims, variant conflicts, regulated language, and review-derived statements before they enter recommendations."
+  }
+]
+

@@ -1,0 +1,41 @@
+{
+  "name": "AI Shopping Auditor",
+  "displayName": "AI Shopping Auditor",
+  "description": "Audits Amazon listings for AI shopping visibility, finds unanswered buyer questions, and delivers source-backed listing rewrites.",
+  "longDescription": "Evaluate an Amazon listing through the natural-language questions real shoppers ask. The agent builds an evidence-backed product fact base, scores how well each listing surface answers high-intent questions, identifies the most commercially important gaps, and drafts exact source-backed fixes for titles, bullets, A+ content, Q&A, images, and attributes.\n\nThis is a visibility and content-readiness audit. It does not access or claim to reproduce Amazon's proprietary ranking, recommendation, Rufus, or Alexa systems.",
+  "version": "0.1.0",
+  "author": {
+    "name": "John Aspinall",
+    "url": "https://goaspi.com"
+  },
+  "icon": "icon.svg",
+  "category": "e-commerce-marketplaces",
+  "tags": [
+    "amazon",
+    "ai-shopping",
+    "listing-audit",
+    "ecommerce",
+    "alexa-shopping",
+    "rufus"
+  ],
+  "license": "UNLICENSED",
+  "skillIds": [
+    "amazon-ai-shopping-visibility-audit"
+  ],
+  "subAgents": [
+    {
+      "id": "ai-shopping-auditor",
+      "description": "Runs source-backed Amazon AI shopping visibility audits and returns prioritized listing fixes.",
+      "tools": "inherit",
+      "skills": [
+        {
+          "id": "amazon-ai-shopping-visibility-audit",
+          "mode": "systemPrompt"
+        }
+      ],
+      "timeoutSeconds": 600,
+      "defaultModel": "auto"
+    }
+  ]
+}
+

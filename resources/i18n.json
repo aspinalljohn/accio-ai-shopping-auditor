@@ -1,0 +1,22 @@
+{
+  "version": "1.0",
+  "defaultLocale": "en",
+  "entries": {
+    "plugin.displayName": {
+      "zh": "AI 购物审计师"
+    },
+    "plugin.description": {
+      "zh": "审计亚马逊商品详情页的 AI 购物可见性，发现未回答的买家问题，并提供有来源依据的文案改写建议。"
+    },
+    "subAgent.ai-shopping-auditor.description": {
+      "zh": "执行有来源依据的亚马逊 AI 购物可见性审计，并返回按优先级排序的商品详情页改进建议。"
+    },
+    "skill.amazon-ai-shopping-visibility-audit.name": {
+      "zh": "亚马逊 AI 购物可见性审计"
+    },
+    "skill.amazon-ai-shopping-visibility-audit.description": {
+      "zh": "通过自然语言买家问题审计亚马逊商品详情页，并生成有来源依据的内容改进建议。"
+    }
+  }
+}
+

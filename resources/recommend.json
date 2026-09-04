@@ -1,0 +1,15 @@
+[
+  {
+    "title": "Audit an Amazon ASIN",
+    "prompt": "Run a complete AI shopping visibility audit for this Amazon ASIN or URL. Lock the exact variant, cite every product fact, and give me the highest-value source-backed listing fixes."
+  },
+  {
+    "title": "Audit from a source packet",
+    "prompt": "Audit the attached product source packet for AI shopping visibility. Clearly label the run as source-packet-only and identify any recommendations blocked by missing live listing evidence."
+  },
+  {
+    "title": "Find unanswered buyer questions",
+    "prompt": "Generate and score the natural-language buyer questions this Amazon listing should answer, then prioritize the gaps most likely to affect purchase confidence or returns."
+  }
+]
+

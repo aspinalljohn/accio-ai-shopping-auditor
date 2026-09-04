@@ -1,0 +1,35 @@
+name: Validate Accio package
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Validate package
+        run: node scripts/validate-package.mjs
+
+      - name: Build and test release archive
+        run: bash scripts/build-release.sh
+
+      - name: Upload release package
+        uses: actions/upload-artifact@v4
+        with:
+          name: ai-shopping-auditor-package
+          path: |
+            dist/*.zip
+            dist/*.sha256
+
